@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desi Gym</title>
+  <!-- Main file css -->
+  <link rel="stylesheet" href="css/style1.css">
+ 
+  <!-- Bootsrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Bootsrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <!-- <h1>Desi Gym</h1> -->
+        <div class="logo">
+          <a href="index1.html"><img src="images/logo.png" class="img-fluid" alt="Logo Desi Gym"></a>
+        </div>
+        <div class="toggle-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="navbar-links">
+          <!-- <li><a href="#">Services</a></li> -->
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#contact-us">Contact</a></li>
+          <li><a href="sign-in.html">Login</a><span class="slash"> | </span><a href="sign-up.html">Sign up</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="video-section">
+    <video autoplay muted loop>
+      <source src="v1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay">
+      <div class="overlay-content">
+        <h2>Train insane or remain the same.</h2>
+        <p>Your journey to a stronger, fitter you starts here.</p>
+        <a href="#" class="btn">Join Us!</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- <div class="content">
+    <div class=".container-fluid about">
+      <div class="row">
+          <div class="about-title"><h1>Choose Program</h1></div>
+      </div>
+    </div>
+  </div>
+  <div class="about-slogan">
+    <div class="container-fluid">
+      <div class="about-slogan-title"><h5>"Your Fitness Destination: Achieve, Inspire, Thrive."</h5></div>
+    </div>
+  </div>
+
+  <div class=".container-fluid">
+    <div class="about-services">
+      <div class="container-fluid text-center">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="col-md-4 service-icon">
+                <div class="image1">
+                  <img src="images/muscles.png" class="img-fluid" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div>
+                  <div class="a-title">
+                    <h6>Strength Training</h6>
+                  </div>
+                  <div class="a-desc">
+                    <p>Build muscle strength and endurance through our comprehensive weightlifting program. Our experienced trainers will guide you through various exercise.
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>        
+      </div>
+    </div>
+  </div> -->
+
+  <div id="membership" class="content">
+    <div class="container-fluid about">
+      <div class="row">
+          <div class="about-title"><h1>Memberships</h1></div>
+      </div>
+    </div>
+  </div>
+  <section class="membership-section">
+    <div data-aos="flip-left" class="membership-card card1">
+        <div class="membership-details">
+            <h2>Become a Club Member!</h2>
+            <!-- <p>Details about membership option 1 go here.</p> -->
+            <button>Join Now @ 50$ / Month</button>
+        </div>
+    </div>
+    <div data-aos="flip-right" class="membership-card card2">
+        <div class="membership-details ">
+            <h2>Try for one day!</h2>
+            <!-- <p>Details about membership option 2 go here.</p> -->
+            <button>Try at @ 10$ / Day</button>
+        </div>
+    </div>
+</section>
+
+<div id="schedule" class="container-fluid">
+  <div class="row b-g">
+    <!-- <div class="col">
+      <div class="btn-group" role="group" aria-label="Weekdays">
+        <button type="button" class="btn weekday-btn" data-day="Monday">Monday</button>
+        <button type="button" class="btn weekday-btn" data-day="Tuesday">Tuesday</button>
+        <button type="button" class="btn weekday-btn" data-day="Wednesday">Wednesday</button>
+        <button type="button" class="btn weekday-btn" data-day="Thursday">Thursday</button>
+        <button type="button" class="btn weekday-btn" data-day="Friday">Friday</button>
+      </div>
+    </div> -->
+    <div class="col">
+      <div class="schedule-container">
+        <div class="btn-group btn-s" role="group" aria-label="Weekdays">
+          <button type="button" class="btn weekday-btn join" data-day="Monday">Monday</button>
+          <button type="button" class="btn weekday-btn join" data-day="Tuesday">Tuesday</button>
+          <button type="button" class="btn weekday-btn join" data-day="Wednesday">Wednesday</button>
+          <button type="button" class="btn weekday-btn join" data-day="Thursday">Thursday</button>
+          <button type="button" class="btn weekday-btn join" data-day="Friday">Friday</button>
+        </div>
+        <table class="table table-bordered schedule-table">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Activity 1</th>
+              <th>Activity 2</th>
+              <th>Activity 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:00 AM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>10:00 AM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>11:00 AM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1:00 PM</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="trainers" class="content">
+  <div class=".container-fluid about">
+    <div class="row">
+        <div class="about-title"><h1>Our Trainers</h1></div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+    <div class="card-group">
+      <div class="card col-md-3" style="width: 18rem; border:1px solid rgba(0,0,0,.125)">
+        <div class="trainer-image">
+          <img src="images/t1.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Divy Patel</h5>
+          <p class="card-text">"Mastering form, igniting results, building champions."</p>
+          <a href="#" class="btn join">More info</a>
+        </div>
+      </div>
+      <div class="card col-md-3" style="width: 18rem; border:1px solid rgba(0,0,0,.125)">
+        <div class="trainer-image">
+          <img src="images/t3.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Aum Patel</h5>
+          <p class="card-text">"Turning your motivation into laziness."</p>
+          <a href="#" class="btn join">More Info</a>
+        </div>
+      </div>
+      <div class="card col-md-3" style="width: 18rem; border: 1px solid rgba(0,0,0,.125);">
+        <div class="trainer-image">
+          <img src="images/t2.jpg" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Dhairya Patel</h5>
+          <p class="card-text">"Elevating your fitness journey with expert guidance and motivation."</p>
+          <a href="#" class="btn join">More Info</a>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- 
+<div class="content">
+  <div class=".container-fluid about">
+    <div class="row">
+        <div class="about-title"><h1>Contact Us</h1></div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.5642530401055!2d-79.50626782415367!3d43.761144745443005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b31d9e740fc3b%3A0xbed549d392f42be7!2s35%20Fountainhead%20Rd%2C%20North%20York%2C%20ON%20M3J%202V7!5e0!3m2!1sen!2sca!4v1710646620286!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="col-md-6 contact-form">
+      <form action="#" method="post">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Name" name="name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Email" name="email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Subject" name="subject" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="5" placeholder="Message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+ -->
+
+<!-- ***** Contact Us Area Starts ***** -->
+<section class="section" id="contact-us">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12">
+              <div id="map" class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.5642530401055!2d-79.50626782415371!3d43.761144745443005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b31d9e740fc3b%3A0xbed549d392f42be7!2s35%20Fountainhead%20Rd%2C%20North%20York%2C%20ON%20M3J%202V7!5e0!3m2!1sen!2sca!4v1710650784537!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xs-12">
+              <div class="contact-form">
+                  <form id="contact" action="" method="post">
+                    <div class="row">
+                      <div class="col-md-6 col-sm-12">
+                        <fieldset>
+                          <input name="name" type="text" id="name" placeholder="Your Name*" required="">
+                        </fieldset>
+                      </div>
+                      <div class="col-md-6 col-sm-12">
+                        <fieldset>
+                          <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email*" required="">
+                        </fieldset>
+                      </div>
+                      <div class="col-md-12 col-sm-12">
+                        <fieldset>
+                          <input name="subject" type="text" id="subject" placeholder="Subject">
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
+                        </fieldset>
+                      </div>
+                      <div class="col-lg-12">
+                        <fieldset>
+                          <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                        </fieldset>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<!-- ***** Contact Us Area Ends ***** -->
+  <script src="js/script.js"></script>
+</body>
+</html>

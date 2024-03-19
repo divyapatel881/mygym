@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  .schedule-container {
+  position: relative;
+  padding: 50px;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.schedule-container:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('b3.jpeg'); /* Add your background image path */
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Adjust blur intensity as needed */
+  z-index: -1;
+}
+
+.weekday-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.schedule-table {
+  z-index: 1;
+}
+
+</style>
+<body>
+  <div class="container">
+    <div class="schedule-container">
+      <div class="btn-group" role="group" aria-label="Weekdays">
+        <button type="button" class="btn btn-primary weekday-btn" data-day="Monday">Monday</button>
+        <button type="button" class="btn btn-primary weekday-btn" data-day="Tuesday">Tuesday</button>
+        <button type="button" class="btn btn-primary weekday-btn" data-day="Wednesday">Wednesday</button>
+        <button type="button" class="btn btn-primary weekday-btn" data-day="Thursday">Thursday</button>
+        <button type="button" class="btn btn-primary weekday-btn" data-day="Friday">Friday</button>
+      </div>
+      <table class="table table-bordered schedule-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Activity 1</th>
+            <th>Activity 2</th>
+            <th>Activity 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:00 AM</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>10:00 AM</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>11:00 AM</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>12:00 PM</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>1:00 PM</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
